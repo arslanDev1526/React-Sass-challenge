@@ -1,0 +1,12 @@
+@use "./reset";
+
+.wrapper {
+  color: reset.$primary-color;
+  background-color: reset.$background-colour;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 270rem;
+}

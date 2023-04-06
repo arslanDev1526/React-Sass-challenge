@@ -1,0 +1,33 @@
+@use "reset";
+
+.post-contianer {
+  color: reset.$primary-color;
+
+  text-align: start;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  .arrow-icon {
+    width: 20px;
+
+    position: relative;
+    left: 5px;
+    top: 5px;
+  }
+  a {
+    text-decoration: none;
+    color: reset.$primary-color;
+
+    border-bottom: 3px solid hsl(176, 68%, 64%);
+    width: 55%;
+    padding-bottom: 8px;
+  }
+}
+
+.hero-image {
+  width: 300px;
+}
