@@ -1,5 +1,14 @@
+$breakpoint-medium: 1440px;
+
 .padding-setter {
   margin-top: 40px;
+
+  @media (min-width: $breakpoint-medium) {
+    flex-wrap: wrap;
+
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .card-container {
@@ -7,10 +16,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
- margin-top: 20px;
+  margin-top: 20px;
   gap: 20px;
 
   padding: 20px;
+
+  @media (min-width: $breakpoint-medium) {
+    width: 40%;
+  }
 
   img {
     width: 20%;

@@ -1,12 +1,23 @@
-.quote-img {
- 
+$breakpoint-medium: 1440px;
+.review-container {
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+    width: 90%;
+    justify-content: end;
 
+    margin-left: 40px;
+  }
+}
+
+.quote-img {
   position: relative;
-  // top: 130px;
+
   left: 20px;
   top: 40px;
 
-  z-index: 1;
+  @media (min-width: $breakpoint-medium) {
+    left: 140px;
+  }
 }
 
 .review-1 {
@@ -14,8 +25,11 @@
 
   margin: 30px 10px 0px 10px;
 
-  
   background-color: hsl(219, 30%, 18%);
+
+  @media (min-width: $breakpoint-medium) {
+    width: 30%;
+  }
 
   .review-1-p {
     margin-bottom: 20px;

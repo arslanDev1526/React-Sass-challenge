@@ -1,70 +1,113 @@
-.footer-container {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
+$breakpoint-medium: 1440px;
 
-  justify-content: space-between;
+.footer-container {
+
+  padding: 200px 20px 20px 30px;
+
 
   background-color: hsl(216, 53%, 9%);
 
-  height: 700px;
+  height: 800px;
 
-  padding-top: 200px;
 
-  .header-logo {
-    width: 150px;
-  }
 
   .footer-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
-    gap: 20px;
-
-    .location-icon {
-      height: 30px;
-    }
-
-    div {
-      margin-left: 5px;
+    .location-content {
+      margin-top: 20px;
       display: flex;
-
+      justify-content: space-between;
       gap: 20px;
+      
+
+      @media (min-width: $breakpoint-medium) {
+        width: 30%;
+      }
     }
-  }
 
-  .footer-container {
-    padding: 20px;
+    .desktop-combine {
+      .phone-content {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        display: flex;
+        gap: 15px;
+      }
 
-    .footer-content {
+      .email-content {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .about-content {
       display: flex;
       flex-direction: column;
 
+      gap: 10px;
+
+      margin-top: 40px;
+
+      @media (min-width: $breakpoint-medium) {
+        margin-top: 0px;
+        width: 10%;
+      }
+    }
+
+    .contact-content {
+      display: flex;
+      flex-direction: column;
+
+      gap: 10px;
+
+      margin-top: 40px;
+
+      @media (min-width: $breakpoint-medium) {
+        margin-top: 0px;
+        width: 10%;
+      }
+    }
+
+    .footer-icons {
+      display: flex;
+      justify-content: center;
       gap: 20px;
 
-      .location-icon {
-        height: 30px;
+      margin-top: 60px;
+
+      img {
+        width: 7%;
+
+        @media (min-width: $breakpoint-medium) {
+          width: 15%;
+        }
       }
 
-      div {
-        margin-left: 5px;
-        display: flex;
+      @media (min-width: $breakpoint-medium) {
+        margin-top: 0px;
 
-        gap: 20px;
+        justify-content: start;
+        width: 20%;
       }
     }
-  }
-  .footer-icons {
-    display: flex;
 
-    width: 40%;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 100px;
-
-    img {
-      width: 20px;
+    @media (min-width: $breakpoint-medium) {
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
+
+
+
+  @media (min-width: $breakpoint-medium) {
+   
+    padding-left: 60px;
+   
+    height: 450px;
+   }
 }
+
+
+

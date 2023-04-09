@@ -3,7 +3,7 @@ import "./card.scss";
 
 export const Card = (props) => {
   return (
-    <div  >
+    <>
          
    
     <div className="card-container">
@@ -13,6 +13,6 @@ export const Card = (props) => {
       <h2> {props.heading} </h2>
       <p>{props.paragraph}</p>
     </div>
-    </div>
+    </>
   );
 };

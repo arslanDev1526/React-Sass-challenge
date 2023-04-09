@@ -1,11 +1,16 @@
-
+$breakpoint-medium: 1440px;
 
 .navbar {
- 
   display: flex;
-  justify-content: center;
+  justify-content: center;  
   gap: 90px;
   padding-top: 20px;
+
+  @media (min-width: $breakpoint-medium) {
+    padding-top: 40px;
+
+    gap: 690px;
+  }
 }
 
 nav {
@@ -16,12 +21,20 @@ nav {
 
     img {
       width: 80px;
+
+      @media (min-width: $breakpoint-medium) {
+        width: 220px;
+      }
     }
   }
 }
 
 .nav-links {
   display: flex;
-  justify-content: space-between;
+
   gap: 15px;
+
+  @media (min-width: $breakpoint-medium) {
+    gap: 55px;
+  }
 }

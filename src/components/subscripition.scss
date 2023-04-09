@@ -1,3 +1,5 @@
+$breakpoint-medium: 1440px;
+
 .subs-container {
   .subs-card {
     background-color: hsl(219, 30%, 18%);
@@ -17,6 +19,39 @@
     width: 320px;
 
     padding: 20px;
+
+    p {
+      @media (min-width: $breakpoint-medium) {
+        width: 50%;
+        text-align: center;
+      }
+    }
+
+  
+
+    @media (min-width: $breakpoint-medium) {
+      width: 80%;
+
+      margin-left: 120px;
+    }
+
+    .subs-card-input {
+
+      
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 20px;
+    
+      align-items: center;
+      
+      @media (min-width: $breakpoint-medium) {
+       
+
+        width: 70%;
+        gap: 20px;
+      }
+    }
   }
 
   input {
@@ -24,6 +59,10 @@
     border-radius: 20px;
     border: none;
     width: 90%;
+
+    @media (min-width: $breakpoint-medium) {
+      width: 70%;
+    }
   }
 
   button {
@@ -32,5 +71,9 @@
     border: none;
     width: 90%;
     background-color: hsl(176, 68%, 64%);
+
+    @media (min-width: $breakpoint-medium) {
+      width: 70%;
+    }
   }
 }
